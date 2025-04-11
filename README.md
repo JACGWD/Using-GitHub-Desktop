@@ -83,3 +83,37 @@ The heart of open source software development is many people contributing to a p
 1. ["Fork" the repo.](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo?tool=desktop) This creates a different branch where you can make changes.
 2. Submit a "pull request" to have your changes merged into the main branch.
 
+## Troubleshooting Issues
+
+
+### What to do if your theme is not syncing with GitHub
+
+This can happen if you have been working in a folder that is not the one within your Wordpress Studio/OneDrive folder. The key here is to relink GitHub with the folder that is in the proper location. 
+
+Specifically, GitHub's invisible files (used to manage the sync) must be in the theme folder you are working on.
+
+1. Backup the theme folder you have been working on (ie move it to desktop)
+2. Go to GitHub Desktop
+3. Click Add
+4. Choose "clone repository" from your GitHub account (first tab)
+5. Select your theme
+6. Clone it into /wp-content/themes/ inside the WP Studio folder inside OneDrive 
+7. In GitHub Desktop, click "Open in Explorer" (macOS) or "Open in Explorer" (PC)
+8. Copy the files and folders in the backup from step 1
+9. Paste them into the window that opened in step 7
+10. Replace all files/folders
+11. Go back to GitHub Desktop
+12. Push
+
+
+### Is your Repo "Not Found"?
+
+Did you submit your repo, but received a message from your teacher that the repo was "not found"?
+
+You probably didn't **uncheck the privacy box** when you created the GitHub repository.
+
+1. Go to your GitHub repo's web page,
+2. Click Settings in the top menu bar, at right
+3. Scroll all the way down to the "Danger Zone" 
+4. Edit the first option: Visibility
+5. Make the repo Public.
