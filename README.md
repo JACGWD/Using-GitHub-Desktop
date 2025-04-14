@@ -117,3 +117,20 @@ You probably didn't **uncheck the privacy box** when you created the GitHub repo
 3. Scroll all the way down to the "Danger Zone" 
 4. Edit the first option: Visibility
 5. Make the repo Public.
+
+
+### "Could Not Connect to the Database" WordPress Error
+
+![Wordpress database connection error screen](./img/error-database-connection.png)
+
+When starting WordPress Studio, you may get an error message like the screen above. This means that WP Studio tried to read the database information but could not find or open the database file. When using OneDrive to sync the WP Studio installation folder across different machines, this error occurs when WordPress tries to access a file that OneDrive has moved to the cloud.
+
+#### Solution
+
+1. Open WordPress Studio
+2. Click the "Open in Finder/Windows Explorer" button to open the web site's root folder. (For example: One Drive/Semester4/Web-IV/WP-Studio)
+3. Go up one level from "WP-Studio" to "Web-IV".
+4. Right-click on the root folder "WP-Studio"
+5. Set the One Drive settings to "Always keep on this device".
+
+![always keep on this device](./img/always-keep-on-this-device.png)
